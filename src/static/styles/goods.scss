@@ -1,0 +1,41 @@
+.goods {
+  width: 100%;
+  &-item {
+    margin-bottom: 25px;
+    padding: 15px;
+    border: 1px solid var(--main);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+      display: flex;
+      align-items: center;
+    }
+    &_empty {
+      justify-content: center;
+      a {
+        text-decoration: underline;
+      }
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &__title {
+      font-size: 20px;
+    }
+
+    &-counter {
+      margin-right: 15px;
+      margin-bottom: 5px;
+      font-weight: 600;
+      &__btn {
+        margin: 0 5px;
+        width: 25px;
+        height: 25px;
+        background: none;
+        border: 1px solid var(--main);
+      }
+    }
+  }
+}

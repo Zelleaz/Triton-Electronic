@@ -1,0 +1,64 @@
+.main {
+  &__link {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &-cards {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  &-card {
+    margin-right: 3%;
+    margin-bottom: 20px;
+    flex-basis: 30%;
+    padding: 10px 15px 25px;
+    display: flex;
+    background-color: var(--cardBg);
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid var(--main);
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+    &__img {
+      margin-bottom: 15px;
+      height: 190px;
+      img {
+        border-radius: 15px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    &__price {
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    &__btn {
+      padding: 10px 15px;
+      border: 2px solid var(--danger);
+      background-color: var(--danger);
+      color: var(--white);
+      border-radius: 15px;
+      font-size: 18px;
+      transition: var(--transition);
+      &:hover {
+        background-color: var(--white);
+        color: var(--danger);
+      }
+    }
+  }
+}
